@@ -42,7 +42,7 @@ font-weight:600;
 
 nav strong{
 color:#2563eb;
-font-size:20px;
+font-size:22px;
 }
 
 /* HERO */
@@ -51,24 +51,22 @@ min-height:100vh;
 display:grid;
 grid-template-columns:1fr 1fr;
 align-items:center;
-padding:120px 80px;
-gap:40px;
-background:#f5f7fb;
+padding:140px 80px;
+gap:50px;
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:#fff;
 }
 
 .hero-text h1{
-font-size:60px;
+font-size:56px;
+line-height:1.1;
 margin-bottom:20px;
-}
-
-.hero-text span{
-color:#2563eb;
 }
 
 .hero-text p{
 font-size:1.2rem;
-margin-bottom:30px;
-color:#555;
+margin-bottom:35px;
+color:#e5e7eb;
 }
 
 .btn{
@@ -77,24 +75,28 @@ border:none;
 border-radius:40px;
 background:#2563eb;
 color:#fff;
-font-size:17px;
+font-size:16px;
 font-weight:700;
 cursor:pointer;
 transition:.3s;
 }
 
+.btn.green{
+background:#25d366;
+}
+
 .btn:hover{
-transform:translateY(-3px);
-box-shadow:0 15px 30px rgba(37,99,235,.4);
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(0,0,0,.3);
 }
 
 .hero-img img{
 width:100%;
 border-radius:30px;
-box-shadow:0 20px 40px rgba(0,0,0,.15);
+box-shadow:0 25px 50px rgba(0,0,0,.4);
 }
 
-/* SECTIONS */
+/* SECTION */
 section{
 padding:120px 80px;
 max-width:1200px;
@@ -103,7 +105,7 @@ margin:auto;
 
 section h2{
 font-size:42px;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 section p{
@@ -123,33 +125,61 @@ margin-top:40px;
 .service{
 background:#fff;
 border-radius:25px;
-padding:35px;
+padding:40px;
 text-align:center;
 box-shadow:0 15px 30px rgba(0,0,0,.08);
 transition:.4s;
+font-weight:600;
 }
 
 .service:hover{
-transform:translateY(-10px);
-}
-
-.service img{
-width:60px;
-margin-bottom:20px;
+transform:translateY(-12px);
 }
 
 /* IMAGE SECTION */
 .image-section{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:40px;
+gap:50px;
 align-items:center;
 }
 
 .image-section img{
 width:100%;
-border-radius:25px;
-box-shadow:0 20px 40px rgba(0,0,0,.15);
+border-radius:30px;
+box-shadow:0 25px 50px rgba(0,0,0,.15);
+}
+
+/* PRICING */
+.pricing{
+background:#eef3ff;
+border-radius:40px;
+}
+
+.price-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.price{
+background:#fff;
+padding:40px;
+border-radius:30px;
+box-shadow:0 15px 30px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.price h3{
+font-size:22px;
+margin-bottom:15px;
+}
+
+.price h1{
+color:#2563eb;
+font-size:38px;
+margin:15px 0;
 }
 
 /* FAQ */
@@ -165,8 +195,8 @@ box-shadow:0 10px 20px rgba(0,0,0,.08);
 .contact{
 background:#2563eb;
 color:#fff;
-padding:60px;
-border-radius:30px;
+padding:80px;
+border-radius:40px;
 text-align:center;
 }
 
@@ -208,8 +238,8 @@ color:#777;
 <nav>
 <strong>AYOUB WEB</strong>
 <div>
-<a href="#about">About</a>
 <a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
 <a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
 </div>
@@ -217,53 +247,74 @@ color:#777;
 
 <section id="intro">
 <div class="hero-text">
-<h1>Build Your <span>Professional</span> Website</h1>
-<p>We design premium websites for businesses that want more clients and a strong online presence.</p>
-<button class="btn" onclick="location.href='#contact'">Start Now</button>
+<h1>Professional Websites<br>For Growing Businesses</h1>
+<p>Fast • Secure • Modern websites designed to convert visitors into real clients.</p>
+
+<div style="display:flex;gap:15px;flex-wrap:wrap">
+<button class="btn" onclick="location.href='#pricing'">View Plans</button>
+<button class="btn green" onclick="location.href='https://wa.me/212624538393'">WhatsApp Me</button>
 </div>
+</div>
+
 <div class="hero-img">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
 </div>
 </section>
 
-<section id="about" class="image-section">
+<section class="image-section">
 <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998">
 <div>
 <h2>About Me</h2>
-<p>I am Ayoub, a web developer specialized in modern, fast and clean websites that convert visitors into clients.</p>
+<p>I’m Ayoub, a professional web developer helping businesses build strong online presence with high-quality, fast and modern websites.</p>
 </div>
 </section>
 
 <section id="services">
 <h2>Services</h2>
 <div class="services">
-<div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png">
-<h3>Web Design</h3>
+<div class="service">⚡ Fast Performance</div>
+<div class="service">📱 Mobile Responsive</div>
+<div class="service">🔒 Secure Code</div>
+<div class="service">🚀 SEO Optimized</div>
+<div class="service">💼 Business Websites</div>
+<div class="service">💬 WhatsApp Support</div>
 </div>
-<div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
-<h3>SEO Optimization</h3>
+</section>
+
+<section id="pricing" class="pricing">
+<h2>Website Plans</h2>
+<div class="price-box">
+<div class="price">
+<h3>Starter</h3>
+<h1>300 MAD</h1>
+<p>1–3 Pages<br>Modern Design<br>WhatsApp Button</p>
+<button class="btn">Choose</button>
 </div>
-<div class="service">
-<img src="https://cdn-icons-png.flaticon.com/512/888/888879.png">
-<h3>Responsive</h3>
+
+<div class="price">
+<h3>Business</h3>
+<h1>600 MAD</h1>
+<p>Multi Pages<br>SEO Ready<br>Fast Delivery</p>
+<button class="btn">Popular</button>
 </div>
 </div>
 </section>
 
 <section id="faq">
 <h2>FAQ</h2>
-<div class="faq">✔ Website delivery in 3–7 days</div>
-<div class="faq">✔ Mobile & Google optimized</div>
-<div class="faq">✔ WhatsApp support</div>
+<div class="faq">✔ Delivery in 2–5 days</div>
+<div class="faq">✔ Google & Mobile optimized</div>
+<div class="faq">✔ Affordable pricing</div>
 </section>
 
 <section id="contact">
 <div class="contact">
-<h2>Contact Me</h2>
+<h2>Ready to Start?</h2>
 <p>Email: adriouech201@gmail.com</p>
-<p>WhatsApp: +212 6 24 54 83 93</p>
+<p>WhatsApp: +212 624 538 393</p>
+<button class="btn green" onclick="location.href='https://wa.me/212624538393'">
+Message Me on WhatsApp
+</button>
 </div>
 </section>
 
@@ -271,7 +322,7 @@ color:#777;
 © 2025 Ayoub Web Agency
 </footer>
 
-<a href="https://wa.me/212624548393" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/212624538393" class="whatsapp">💬</a>
 
 </body>
 </html>
