@@ -1,0 +1,15 @@
+Ayoub Web Agency - Hosting Instructions
+
+1) index.html — الموقع الرئيسي
+2) sitemap.xml — خريطة الموقع لـ Google
+3) robots.txt — للتحكم في أرشفة الموقع
+
+خطوات النشر:
+
+1. ضع كل الملفات في مجلد واحد.
+2. اضغط المجلد ZIP.
+3. ارفع ZIP على أي استضافة (Netlify, Hostinger, Vercel...).
+4. بعد رفعه، قم بتحديث الروابط في sitemap.xml و robots.txt و meta tags في index.html.
+5. أرسل sitemap إلى Google Search Console.
+6. انتظر 3–10 أيام حتى يفهرس Google موقعك.
+
