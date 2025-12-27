@@ -1,0 +1,164 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#ffffff;
+  color:#111;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  overflow:hidden;
+}
+
+/* VIDEO */
+.hero video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
+}
+
+/* OVERLAY */
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+  z-index:2;
+}
+
+/* CONTENT */
+.hero-content{
+  position:relative;
+  z-index:3;
+  max-width:700px;
+  color:#ffffff;
+}
+
+.logo{
+  height:60px;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero p{
+  margin:20px 0;
+  font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  background:#25d366;
+  color:#000;
+  padding:14px 30px;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:6px;
+}
+
+/* SECTIONS */
+section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+h2{
+  margin-bottom:40px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* CARDS */
+.card{
+  background:#f9fafb;
+  padding:30px;
+  border-radius:12px;
+}
+
+.card i{
+  font-size:28px;
+  color:#25d366;
+}
+
+/* PRICING */
+.price-card{
+  background:#ffffff;
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.price{
+  font-size:30px;
+  color:#25d366;
+  font-weight:bold;
+}
+
+.popular{
+  border:2px solid #25d366;
+}
+
+/* CONTACT */
+.contact-box{
+  max-width:500px;
+  margin:auto;
+  background:#f1f5f9;
+  padding:30px;
+  border-radius:14px;
+}
+
+.contact-box p{
+  margin:15px 0;
+}
+
+.contact-box i{
+  color:#25d366;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  background:#25d366;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  text-decoration:none;
+  z-index:999;
+}
+
+/* FOOTER */
+footer{
+  padding:30px;
+  text-align:center;
+  background:#f1f5f9;
+}
