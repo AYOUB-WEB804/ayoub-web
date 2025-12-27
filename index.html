@@ -3,338 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ayoub Web </title>
+<title>Ayoub Web | Digital Services</title>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KDLZPS6R4P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KDLZPS6R4P');
-</script>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f5f7fb;
-color:#222;
-}
-
-/* NAVBAR */
-nav{
-position:fixed;
-top:0;
-width:100%;
-padding:20px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#fff;
-box-shadow:0 5px 25px rgba(0,0,0,.08);
-z-index:1000;
-}
-
-nav a{
-text-decoration:none;
-color:#222;
-margin-left:25px;
-font-weight:600;
-}
-
-nav strong{
-color:#2563eb;
-font-size:22px;
-}
-
-/* HERO */
-#intro{
-min-height:100vh;
-display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-padding:140px 80px;
-gap:50px;
-background:linear-gradient(135deg,#0f172a,#2563eb);
-color:#fff;
-}
-
-.hero-text h1{
-font-size:56px;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.hero-text p{
-font-size:1.2rem;
-margin-bottom:35px;
-color:#e5e7eb;
-}
-
-.btn{
-padding:15px 40px;
-border:none;
-border-radius:40px;
-background:#2563eb;
-color:#fff;
-font-size:16px;
-font-weight:700;
-cursor:pointer;
-transition:.3s;
-}
-
-.btn.green{
-background:#25d366;
-}
-
-.btn:hover{
-transform:translateY(-4px);
-box-shadow:0 15px 35px rgba(0,0,0,.3);
-}
-
-.hero-img img{
-width:100%;
-border-radius:30px;
-box-shadow:0 25px 50px rgba(0,0,0,.4);
-}
-
-/* SECTION */
-section{
-padding:120px 80px;
-max-width:1200px;
-margin:auto;
-}
-
-section h2{
-font-size:42px;
-margin-bottom:25px;
-}
-
-section p{
-font-size:1.1rem;
-color:#555;
-line-height:1.7;
-}
-
-/* SERVICES */
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-margin-top:40px;
-}
-
-.service{
-background:#fff;
-border-radius:25px;
-padding:40px;
-text-align:center;
-box-shadow:0 15px 30px rgba(0,0,0,.08);
-transition:.4s;
-font-weight:600;
-}
-
-.service:hover{
-transform:translateY(-12px);
-}
-
-/* IMAGE SECTION */
-.image-section{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
-
-.image-section img{
-width:100%;
-border-radius:30px;
-box-shadow:0 25px 50px rgba(0,0,0,.15);
-}
-
-/* PRICING */
-.pricing{
-background:#eef3ff;
-border-radius:40px;
-}
-
-.price-box{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-margin-top:40px;
-}
-
-.price{
-background:#fff;
-padding:40px;
-border-radius:30px;
-box-shadow:0 15px 30px rgba(0,0,0,.1);
-text-align:center;
-}
-
-.price h3{
-font-size:22px;
-margin-bottom:15px;
-}
-
-.price h1{
-color:#2563eb;
-font-size:38px;
-margin:15px 0;
-}
-
-/* FAQ */
-.faq{
-background:#fff;
-padding:25px;
-border-radius:20px;
-margin-bottom:15px;
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-}
-
-/* CONTACT */
-.contact{
-background:#2563eb;
-color:#fff;
-padding:80px;
-border-radius:40px;
-text-align:center;
-}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25d366;
-color:#fff;
-width:65px;
-height:65px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-font-size:28px;
-box-shadow:0 15px 30px rgba(37,211,102,.5);
-z-index:999;
-transition:.3s;
-text-decoration:none;
-}
-
-.whatsapp:hover{
-transform:scale(1.15);
-}
-
-/* FOOTER */
-footer{
-text-align:center;
-padding:30px;
-color:#777;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<nav>
-<strong>AYOUB WEB</strong>
-<div>
-<a href="#services">Services</a>
-<a href="#pricing">Pricing</a>
-<a href="#faq">FAQ</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+<!-- HERO -->
+<section class="hero">
 
-<section id="intro">
-<div class="hero-text">
-<h1>Professional Websites<br>For Growing Businesses</h1>
-<p>Fast • Secure • Modern websites designed to convert visitors into real clients.</p>
+  <!-- BACKGROUND VIDEO -->
+  <video autoplay muted loop playsinline preload="auto">
+    <source src="assets/video.mp4" type="video/mp4">
+  </video>
 
-<div style="display:flex;gap:15px;flex-wrap:wrap">
-<button class="btn" onclick="location.href='#pricing'">View Plans</button>
-<button class="btn green" onclick="location.href='https://wa.me/+212768967045'">WhatsApp Me</button>
-</div>
-</div>
+  <!-- OVERLAY -->
+  <div class="overlay"></div>
 
-<div class="hero-img">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-</div>
+  <!-- CONTENT -->
+  <div class="hero-content">
+
+    <!-- LOGO -->
+    <img src="assets/logo.svg" class="logo" alt="Ayoub Web Logo">
+
+    <h1>
+      Professional Websites<br>
+      For Your Business
+    </h1>
+
+    <p>
+      تصميم مواقع احترافية — دعم مباشر عبر واتساب
+    </p>
+
+    <a href="#contact" class="btn">
+      <i class="fa-brands fa-whatsapp"></i>
+      Contact on WhatsApp
+    </a>
+
+  </div>
+
 </section>
 
-<section class="image-section">
-<img src="https://images.unsplash.com/photo-1531482615713-2afd69097998">
-<div>
-<h2>About Me</h2>
-<p>I’m Ayoub, a professional web developer helping businesses build strong online presence with high-quality, fast and modern websites.</p>
-</div>
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <i class="fa-solid fa-globe"></i>
+      <h3>Website Design</h3>
+      <p>Modern & clean design</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Fast & secure websites</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <h3>SEO Optimization</h3>
+      <p>Better Google ranking</p>
+    </div>
+
+  </div>
 </section>
 
-<section id="services">
-<h2>Services</h2>
-<div class="services">
-<div class="service">⚡ Fast Performance</div>
-<div class="service">📱 Mobile Responsive</div>
-<div class="service">🔒 Secure Code</div>
-<div class="service">🚀 SEO Optimized</div>
-<div class="service">💼 Business Websites</div>
-<div class="service">💬 WhatsApp Support</div>
-</div>
+<!-- PRICING -->
+<section class="pricing">
+  <h2>Pricing</h2>
+
+  <div class="grid">
+
+    <div class="price-card">
+      <h3>Starter</h3>
+      <p class="price">600 DH</p>
+      <p>One page website</p>
+    </div>
+
+    <div class="price-card popular">
+      <h3>Business</h3>
+      <p class="price">1200 DH</p>
+      <p>Full business website</p>
+    </div>
+
+    <div class="price-card">
+      <h3>Pro</h3>
+      <p class="price">2500+ DH</p>
+      <p>Custom solution</p>
+    </div>
+
+  </div>
 </section>
 
-<section id="pricing" class="pricing">
-<h2>Website Plans</h2>
-<div class="price-box">
-<div class="price">
-<h3>Starter</h3>
-<h1>300 MAD</h1>
-<p>1–3 Pages<br>Modern Design<br>WhatsApp Button</p>
-<button class="btn">Choose</button>
-</div>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
 
-<div class="price">
-<h3>Business</h3>
-<h1>600 MAD</h1>
-<p>Multi Pages<br>SEO Ready<br>Fast Delivery</p>
-<button class="btn">Popular</button>
-</div>
-</div>
+  <div class="contact-box">
+
+    <p>
+      <i class="fa-brands fa-whatsapp"></i>
+      <strong>WhatsApp:</strong>
+      <a href="https://wa.me/212768967045" target="_blank">
+        +212 768 967 045
+      </a>
+    </p>
+
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <strong>Email:</strong>
+      <a href="mailto:adriouech201@gmail.com">
+        adriouech201@gmail.com
+      </a>
+    </p>
+
+  </div>
 </section>
 
-<section id="faq">
-<h2>FAQ</h2>
-<div class="faq">✔ Delivery in 2–5 days</div>
-<div class="faq">✔ Google & Mobile optimized</div>
-<div class="faq">✔ Affordable pricing</div>
-</section>
-
-<section id="contact">
-<div class="contact">
-<h2>Ready to Start?</h2>
-<p>Email: adriouech201@gmail.com</p>
-<p>WhatsApp: +212 768 967 045</p>
-<button class="btn green" onclick="location.href='https://wa.me/212768967045>
-Message Me on WhatsApp
-</button>
-</div>
-</section>
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/212768967045" class="whatsapp-float" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 <footer>
-© 2025 Ayoub Web 
+© 2025 Ayoub Web — Digital Services
 </footer>
-
-<<a href="https://wa.me/212768967045" class="whatsapp">💬</a>
 
 </body>
 </html>
+
+
 
 
 
